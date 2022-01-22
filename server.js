@@ -103,7 +103,7 @@ app.get("/api/restaurants/:_id", (req, res) => {
 app.put("/api/restaurants/:_id", (req, res) => {
   db.updateRestaurantById(req.body, req.params._id)
     .then(() => {
-      res.status(200).json(`Restaurant (${req.body._id}) updated!`);
+      res.status(200).json(`Restaurant (${req.params._id}) updated!`);
     })
     .catch((err) => {
       res.status(500).json(`Error: ${err}`);
