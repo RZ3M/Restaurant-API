@@ -1,0 +1,17 @@
+{
+  "name": "restaurantapi",
+  "version": "1.0.0",
+  "description": "web422 assignment 1",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jack Ma",
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^15.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  }
+}
