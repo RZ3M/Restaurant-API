@@ -67,7 +67,7 @@ app.get(
     [Segments.QUERY]: Joi.object().keys({
       page: Joi.number().required(),
       perPage: Joi.number().required(),
-      borough: Joi.string().required(),
+      borough: Joi.string(),
     }),
   }),
   (req, res) => {
