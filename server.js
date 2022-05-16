@@ -1,13 +1,4 @@
-/*********************************************************************************
- * WEB422 – Assignment 1
- * I declare that this assignment is my own work in accordance with Seneca Academic Policy.
- * No part of this assignment has been copied manually or electronically from any other source
- * (including web sites) or distributed to other students.
- *
- * Name: Jack Ma Student ID: 150150209 Date: 01/21/2022
- * Heroku Link: https://salty-depths-25560.herokuapp.com/
- *
- ********************************************************************************/
+// Heroku Link: https://salty-depths-25560.herokuapp.com/
 
 const express = require("express");
 const path = require("path");
@@ -49,18 +40,6 @@ app.post("/api/restaurants", (req, res) => {
     });
 });
 
-// normal version
-// app.get("/api/restaurants", (req, res) => {
-//   db.getAllRestaurants(req.query.page, req.query.perPage, req.query.borough)
-//     .then((restaurants) => {
-//       res.status(200).json(restaurants);
-//     })
-//     .catch((err) => {
-//       res.status(500).json(`Error: ${err}`);
-//     });
-// });
-
-// extra version
 app.get(
   "/api/restaurants",
   celebrate({
